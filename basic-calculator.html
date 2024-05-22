@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="basic-calculator-style.css">
+        <title>Basic Calculator</title>
+    </head>
+    <body>
+        <div class="hint">
+            <h2 style="text-align: center;">PETUNJUK</h2>
+            <ul>
+                <li>Anda boleh menggunakan papan kekunci (keyboard) jika anda menggunakan laptop atau komputer.</li>
+                <li>Aplikasi masih akses awal, jadi kemungkinan ini ada bug (akan dibaiki).</li>
+            </ul>
+        </div>
+        <div class="calculator">
+            <div class="cal-display">
+                <input type="text" id="display" disabled>
+            </div>
+            <div class="brand">
+                <h2>DENVEN</h2>
+                <p>BASIC CALCULATOR</p>
+            </div>
+            <div class=cal-button>
+                <div class="button number" onclick="appendToDisplay('7')">7</div>
+                <div class="button number" onclick="appendToDisplay('8')">8</div>
+                <div class="button number" onclick="appendToDisplay('9')">9</div>
+                <div class="button operator" onclick="appendToDisplay('/')">÷</div>
+                <div class="button other" onclick="clearDisplay()">C</div>
+                <div class="button number" onclick="appendToDisplay('4')">4</div>
+                <div class="button number" onclick="appendToDisplay('5')">5</div>
+                <div class="button number" onclick="appendToDisplay('6')">6</div>
+                <div class="button operator" onclick="appendToDisplay('*')">×</div>
+                <div class="button other" onclick="delValue()">Del</div>
+                <div class="button number" onclick="appendToDisplay('1')">1</div>
+                <div class="button number" onclick="appendToDisplay('2')">2</div>
+                <div class="button number" onclick="appendToDisplay('3')">3</div>
+                <div class="button operator" onclick="appendToDisplay('-')">-</div>
+                <div class="button equal" onclick="calculate()">=</div>
+                <div class="button number" onclick="appendToDisplay('0')">0</div>
+                <div class="button number" onclick="appendToDisplay('00')">00</div>
+                <div class="button dot" onclick="appendToDisplay('.')">.</div>
+                <div class="button operator" onclick="appendToDisplay('+')">+</div>
+            </div>
+        </div>
+        <script src="basic-calculator.js"></script>
+    </body>
+</html>

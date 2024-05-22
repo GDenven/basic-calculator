@@ -1,0 +1,142 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    background-color: #f8af7e;
+}
+
+.hint {
+    width: 380px;
+    height: 300px;
+    margin: 100px 40px 100px 40px;
+    padding-right: 20px; 
+    border-radius: 10px;
+    background-color: #0fbf3a;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.calculator {
+    height: 550px;
+    width: 380px;
+    margin: 20px 10px 0px 20px;
+    background-color: #193656;
+    border-radius: 20px;
+}
+
+.cal-display {
+    height: 90px;
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 20px 0px;
+}
+
+#display {
+    height: 90px;
+    width: 340px;
+    border-radius: 10px;
+    font-size: 50px;
+    color: black;
+    background-color: grey;
+}
+
+.brand {
+    text-align: center;
+    color: #525669;
+}
+
+.brand > h2 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+}
+
+.brand > p {
+    margin-top: 0px;
+    font-size: 5px;
+}
+
+.cal-button {
+    height: 50%;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    margin: 40px 20px 50px 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 55px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.equal {
+    grid-row: span 2;
+    height: 130px;
+}
+
+.number {
+    background-color: #060606;
+    color: #FFFFFF;
+}
+
+.operator {
+    background-color: #aaa8b3;
+    color: white;
+}
+
+.other, .equal {
+    background-color: #0fbf3a;
+    color: white;
+}
+
+.dot {
+    background-color: #ffcf02;
+    color: white;
+}
+
+/*for mobile phones and tablets*/
+
+@media only screen and (max-width: 992px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #f8af7e;
+    }
+
+    .hint {
+        width: 380px;
+        height: 300px;
+        margin: 50px 0px 50px 0px;
+        padding-right: 20px; 
+        border-radius: 10px;
+        background-color: #0fbf3a;
+    }
+    
+    li {
+        margin-top: 10px;
+    }
+    
+    .calculator {
+        height: 550px;
+        width: 380px;
+        margin: 20px 10px 0px 20px;
+        background-color: #193656;
+        border-radius: 20px;
+    }
+    
+}
